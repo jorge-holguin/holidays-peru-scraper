@@ -13,7 +13,7 @@ export interface Holiday {
 export async function getHolidays(year: number = 2025): Promise<Holiday[]> {
   try {
     // 1. Hacemos la request a la página oficial
-    const url = `https://www.gob.pe/feriados?year=${year}`;
+    const url = `https://www.gob.pe/feriados/61-dia-no-laborable-sector-publico`;
     // Aunque la URL real no se filtra por ?year=2025, lo dejamos como ejemplo, 
     // o simplemente: const url = "https://www.gob.pe/feriados";
 
